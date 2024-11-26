@@ -1,0 +1,10 @@
+[project]
+name = "translater"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ell-ai[all]>=0.0.15",
+    "pydantic-settings>=2.6.1",
+]
