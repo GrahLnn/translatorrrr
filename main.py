@@ -1,5 +1,5 @@
 import os
-from src.translator import Translator
+from translatorrr import Translator
 
 translator = Translator()
 

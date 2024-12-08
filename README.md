@@ -18,6 +18,17 @@ This project is a translation tool that helps translate documents while preservi
 uv venv
 uv pip install .
 ```
+or
+
+1. install this project as a package
+
+```bash
+uv add git+https://github.com/GrahLnn/translatorrrr.git
+pip install git+https://github.com/GrahLnn/translatorrrr.git
+```
+
+2. Create a `.env` file based on the `.env.example` template
+3. `from translatorrrr import Translator`
 
 ## Usage
 
