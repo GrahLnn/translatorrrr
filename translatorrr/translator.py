@@ -79,7 +79,7 @@ class Translator:
             source_text = file.read()
 
         # Call translation logic
-        translation = self._translate(source_text)
+        translation = self.translate(source_text)
 
         # Check if first line is a level-1 heading
         first_line = translation.split('\n')[0]
@@ -104,7 +104,7 @@ class Translator:
         self.cacher.delete()
         return translation_output_path.strip()
 
-    def _translate(self, source_text: str) -> str:
+    def translate(self, source_text: str) -> str:
         source_text = replace_markdown_links(source_text)
         num_tokens_in_text = num_tokens_in_string(source_text)
 
